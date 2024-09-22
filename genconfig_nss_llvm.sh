@@ -10,3 +10,6 @@ cat config.buildinfo | grep -v CONFIG_TARGET_ | grep -v CONFIG_IB | grep -v ONFI
 
 make defconfig
 
+#skip xdp
+cat .config | grep -v "CONFIG_PACKAGE.*xdp" > .config.tmp
+cp .config.tmp .config
