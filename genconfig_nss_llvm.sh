@@ -8,6 +8,8 @@ echo CONFIG_ATH10K=n >> .config
 wget  https://downloads.openwrt.org/snapshots/targets/qualcommax/ipq807x/config.buildinfo -O config.buildinfo
 cat config.buildinfo | grep -v CONFIG_TARGET_ | grep -v CONFIG_IB | grep -v ONFIG_PACKAGE >> .config
 
+echo "# CONFIG_NF_CONNTRACK_DSCPREMARK_EXT is not set" >> target/linux/generic/config-6.6
+
 make defconfig
 
 #skip xdp
