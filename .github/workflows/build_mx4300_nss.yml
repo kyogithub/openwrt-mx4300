@@ -45,8 +45,8 @@ jobs:
             - name: Build firmware images
               run: make -j$(($(nproc)+1)) world
 
-            - name: Pack packages
-              run:  sh pack_kmod.sh
+            - name: Pack kmods
+              run:  sh pack_kmods.sh
 
             - name: Get SHA
               uses: benjlevesque/short-sha@v2.2
@@ -55,4 +55,4 @@ jobs:
               uses: ncipollo/release-action@v1
               with:
                 tag: qualcommax-nss-${{ env.SHA }}
-                artifacts: bin/targets/qualcommax/ipq807x/openwrt-qualcommax-ipq807x-*, kmod.tar.gz
+                artifacts: bin/targets/qualcommax/ipq807x/openwrt-qualcommax-ipq807x-*, kmods.tar.gz
