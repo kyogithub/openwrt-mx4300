@@ -128,8 +128,16 @@ CONFIG_PACKAGE_jq=y
 CONFIG_PACKAGE_pigz=y
 CONFIG_PACKAGE_tar=y
 CONFIG_PACKAGE_tcpdump=y
-
 CONFIG_HTOP_LMSENSORS=n
+
+#Personal packages
+CONFIG_PACKAGE_luci-app-samba4=y
+CONFIG_PACKAGE_kmod-wireguard=y
+CONFIG_PACKAGE_fping=y
+CONFIG_PACKAGE_arp-scan=y
+CONFIG_PACKAGE_block-mount=y
+CONFIG_PACKAGE_wireguard-tools=y
+
 
 # Prevent opkg from adding custom feeds to /etc/opkg/distfeeds.conf
 CONFIG_FEED_nss=n
