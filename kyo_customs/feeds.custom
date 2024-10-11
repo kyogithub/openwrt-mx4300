@@ -1,1 +1,1 @@
-src-git luci_theme https://github.com/jerrykuku/luci-theme-argon.git
+src-git-full luci_theme_argon https://github.com/jerrykuku/luci-theme-argon.git
