@@ -32,6 +32,9 @@ jobs:
                       file \
                       wget && \
                   sudo apt-get clean
-
+                  
+            - name: Checkout
+              uses: actions/checkout@v4
+              
             - name: Generate config
               run:  sh genconfig.sh
