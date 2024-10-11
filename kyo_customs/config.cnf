@@ -1,4 +1,5 @@
-#add extras
+#!/bin/sh
+
 echo CONFIG_PACKAGE_luci-proto-wireguard=y >> .config
 echo CONFIG_PACKAGE_luci-app-pbr=y >> .config
 echo CONFIG_PACKAGE_block-mount=y >> .config
