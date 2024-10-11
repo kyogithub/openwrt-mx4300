@@ -10,17 +10,8 @@ echo CONFIG_TARGET_DEVICE_PACKAGES_qualcommax_ipq807x_DEVICE_linksys_mx4300=\"\"
 echo CONFIG_PACKAGE_luci=y >> .config
 
 #add extras
-echo CONFIG_PACKAGE_block-mount=y >> .config
-echo CONFIG_PACKAGE_luci-app-samba4=y >> .config
-echo CONFIG_PACKAGE_luci-app-ddns=y >> .config
-echo CONFIG_PACKAGE_ddns-scripts-noip=y >> .config
-echo CONFIG_PACKAGE_luci-proto-wireguard=y >> .config
-echo CONFIG_PACKAGE_kmod-wireguard=y >> .config
-echo CONFIG_PACKAGE_wireguard-tools=y >> .config
-echo CONFIG_PACKAGE_luci-app-pbr=y >> .config
-echo CONFIG_PACKAGE_fping=y >> .config
-echo CONFIG_PACKAGE_arp-scan=y >> .config
-echo CONFIG_PACKAGE_luci-theme-argon=y >> .config
+source /kyo_customs/config.cnf
+
 make defconfig
 
 #add libpam
