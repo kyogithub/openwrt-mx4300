@@ -38,3 +38,4 @@ jobs:
               
             - name: Generate config
               run:  sh genconfig.sh
+              run:  cat .config
