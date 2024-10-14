@@ -46,7 +46,7 @@ jobs:
               run:  make defconfig
 
             - name: Build firmware images
-              run:  make -j$(($(nproc)+1)) world
+              run:  make -j$(($(nproc)+1)) download clean world
             
             - name: Prepare release
               run:  sh release.sh
