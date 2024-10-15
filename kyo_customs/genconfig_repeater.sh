@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "- $currdir "
+echo "- ${CURDIR} "
 
 wget -qO- https://downloads.openwrt.org/snapshots/targets/qualcommax/ipq807x/config.buildinfo | grep -v CONFIG_TARGET_DEVICE_ | grep -v CONFIG_TARGET_ALL_PROFILES | grep -v CONFIG_TARGET_MULTI_PROFILE > .config
 echo CONFIG_TARGET_ALL_PROFILES=n >> .config
