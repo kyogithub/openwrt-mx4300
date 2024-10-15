@@ -1,4 +1,4 @@
-name: build mx4300 foss image master
+name: build mx4300 foss image repeater
 on: workflow_dispatch
 
 jobs:
