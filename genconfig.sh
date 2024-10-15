@@ -8,10 +8,6 @@ echo CONFIG_TARGET_DEVICE_qualcommax_ipq807x_DEVICE_linksys_mx4300=y >> .config
 echo CONFIG_TARGET_DEVICE_PACKAGES_qualcommax_ipq807x_DEVICE_linksys_mx4300=\"\" >> .config
 #add luci
 echo CONFIG_PACKAGE_luci=y >> .config
-
-#add extras
-cat kyo_customs/config.cnf >> .config
-
 make defconfig
 
 #add libpam
@@ -20,4 +16,3 @@ make defconfig
 #skip xdp compile
 cat .config | grep -v "CONFIG_PACKAGE.*xdp" > .config.tmp
 cp .config.tmp .config
-
