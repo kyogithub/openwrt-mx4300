@@ -53,6 +53,6 @@ jobs:
             - name: Release
               uses: ncipollo/release-action@v1
               with:
-                tag: qualcommax-foss-${{ env.SHA }}
+                tag: node-qualcommax-foss-${{ env.SHA }}
                 artifacts: release/*
                 bodyFile: note.md
