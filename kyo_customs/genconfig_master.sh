@@ -12,7 +12,7 @@ echo CONFIG_PACKAGE_luci=y >> .config
 #add extras
 cat kyo_customs/master.cnf >> .config
 
-make defconfig
+make defconfig download clean
 
 #add libpam
 #echo CONFIG_PACKAGE_libpam=y >> .config
