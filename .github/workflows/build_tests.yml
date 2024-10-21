@@ -38,8 +38,8 @@ jobs:
             - name: Add custom feeds
               run:  sh kyo_customs/custom_feeds.sh && cat feeds.conf.default
 
- #           - name: Update feeds
- #             run:  scripts/feeds update -a && scripts/feeds install -a
+            - name: Update feeds
+              run:  scripts/feeds update -a && scripts/feeds install -a
 
  #           - name: Generate config
  #             run:  sh genconfig_mesh.sh
