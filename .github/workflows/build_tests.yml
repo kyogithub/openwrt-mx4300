@@ -32,14 +32,17 @@ jobs:
                       wget && \
                   sudo apt-get clean
 
-            - name: Checkout
-              uses: actions/checkout@v4
+#            - name: Checkout
+#              uses: actions/checkout@v4
+            
+            - name: Add custom feeds
+              run:  sh kyo_customs/custom_feeds.sh && cat feeds.conf.default
 
-            - name: Update feeds
-              run:  scripts/feeds update -a && scripts/feeds install -a
+ #           - name: Update feeds
+ #             run:  scripts/feeds update -a && scripts/feeds install -a
 
-            - name: Generate config
-              run:  sh genconfig_mesh.sh
+ #           - name: Generate config
+ #             run:  sh genconfig_mesh.sh
 
-            - name: Check config
-              run:  cat .config
+ #           - name: Check config
+ #             run:  cat .config
