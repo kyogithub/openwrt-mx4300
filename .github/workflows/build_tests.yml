@@ -38,9 +38,9 @@ jobs:
             - name: Cachewrtbuild
               uses: kyogithub/cachewrtbuild@main
               with:
-              ccache: 'true'
-              mixkey: 'MX4300'
-              prefix: 'openwrt'
+              ccache: true
+              mixkey: MX4300
+              prefix: openwrt
             
             - name: Add custom feeds
               run:  sh kyo_customs/custom_feeds.sh && cat feeds.conf.default
