@@ -7,6 +7,11 @@ jobs:
         runs-on: ubuntu-latest
         permissions:
             contents: write
+        uses: klever1988/cachewrtbuild@main
+            with:
+              ccache: 'true'
+              mixkey: 'MX4300'
+              prefix: 'openwrt'
         steps:
             - name: Install packages
               run: |
