@@ -35,9 +35,9 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
 
-            - name: Cache
-            uses: kyogithub/cachewrtbuild@main
-            with:
+            - name: Cachewrtbuild
+              uses: kyogithub/cachewrtbuild@main
+              with:
               ccache: 'true'
               mixkey: 'MX4300'
               prefix: 'openwrt'
