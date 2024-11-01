@@ -15,4 +15,4 @@ echo "- $kernel
 $checksum
 \`\`\`
 
-- \"kernel dependency error\" [fix](https://github.com/arix00/openwrt-mx4300/blob/doc/snapshot-dependency-guide.md)" > $MD
+- \"pkg_hash_check_unresolved: cannot find dependency kernel\" [fix](https://github.com/arix00/openwrt-mx4300/blob/doc/snapshot-dependency-guide.md)" > $MD
