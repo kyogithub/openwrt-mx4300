@@ -1,9 +1,9 @@
-name: build foss image master
+name: build foss image node
 on: workflow_dispatch
 
 jobs:
     build:
-        name: build foss image master
+        name: build foss image node
         runs-on: ubuntu-latest
         permissions:
             contents: write
