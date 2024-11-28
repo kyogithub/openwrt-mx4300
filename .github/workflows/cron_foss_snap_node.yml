@@ -1,0 +1,11 @@
+name: auto build foss snapshot node image
+on:
+  schedule:
+    - cron: "30 12 * * 3,6"
+
+jobs:
+  call-build-foss-snapshot:
+    permissions:
+      contents: write
+    uses:
+      ./.github/workflows/foss_snapshot_node.yml
