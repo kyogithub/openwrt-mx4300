@@ -1,4 +1,4 @@
-name: build foss snapshot node
+name: build foss snapshot master
 on:
   workflow_dispatch:
   workflow_call:          
