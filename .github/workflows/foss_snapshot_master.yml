@@ -8,7 +8,7 @@ jobs:
     permissions:
       contents: write
     uses:
-      ./.github/workflows/_image_builder.yml
+      ./.github/workflows/image_builder_mod.yml
     with:
       build_settings: 
         '{"SOURCE_REPO":  "https://github.com/openwrt/openwrt.git", 
