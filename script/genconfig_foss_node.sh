@@ -30,7 +30,6 @@ CONFIG_PACKAGE_bash=y
 CONFIG_PACKAGE_netdata=y
 CONFIG_PACKAGE_arp-scan=y
 CONFIG_PACKAGE_luci-compat=y
-CONFIG_PACKAGE_luci-lib-ipkg=y
 CONFIG_PACKAGE_luci-app-hd-idle=y
 " >> .config
 
