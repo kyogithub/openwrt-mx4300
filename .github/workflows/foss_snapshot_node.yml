@@ -20,5 +20,5 @@ jobs:
         "BUILD_CUSTOM": "node",
         "BUILD_VER": "snapshot",
         "BUILD_TAG": "",
-        "BUILD_SYNC": "y",        
+        "BUILD_SYNC": "n",        
         "BUILD_KMOD": "y"}'
