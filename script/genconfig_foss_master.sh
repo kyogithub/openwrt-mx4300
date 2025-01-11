@@ -21,6 +21,7 @@ CONFIG_PACKAGE_luci=y
 #Custom Packages for Master Router 
 echo "
 CONFIG_PACKAGE_luci-proto-wireguard=y
+CONFIG_PACKAGE_dnsmasq-full=y
 CONFIG_PACKAGE_luci-app-pbr=y
 CONFIG_PACKAGE_qosify=y
 CONFIG_PACKAGE_adguardhome=y
