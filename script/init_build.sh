@@ -41,7 +41,7 @@ elif [ $type = "nss" ]; then
     esac
 fi
 
-[ -z $PATCH ] && echo "Unsupported $type $ver" && exit 1
+[ "$PATCH" = "" ] && echo "Unsupported $type $ver" && exit 1
 
 if [ "$ver" = "snapshot" ]; then
   buildinfo="https://downloads.openwrt.org/snapshots/targets/qualcommax/ipq807x/version.buildinfo"
@@ -84,3 +84,4 @@ fi
 rej=$(find . -name "*.rej"  | wc -l)
 if [ ! $rej = "0" ]; then
     exit 1
+fi
