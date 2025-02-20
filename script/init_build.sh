@@ -78,6 +78,10 @@ if [ $type = "nss" ]; then
     rm package/firmware/ipq-wifi/Makefile.rej
     #cat package/firmware/ipq-wifi/Makefile
   fi
+  if [ -f "include/kernel-6.6.rej" ]; then
+      echo "##keep upstream include/kernel-6.6"
+      rm include/kernel-6.6.rej
+  fi
 fi
 
 #err exit with unhandled failed patch
