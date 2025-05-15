@@ -83,7 +83,8 @@ if [ $type = "nss" ]; then
       rm include/kernel-6.6.rej
   fi
   if [ -f "package/kernel/nat46/Makefile.rej" ]; then
-      echo "##ignore version mismatch"
+      echo "##use package/kernel/nat46/Makefile from qosmio"
+      curl -L "https://raw.githubusercontent.com/qosmio/openwrt-ipq/refs/heads/${NSSBRANCH}/package/kernel/nat46/Makefile" -o package/kernel/nat46/Makefile
       rm package/kernel/nat46/Makefile.rej
   fi
 fi
