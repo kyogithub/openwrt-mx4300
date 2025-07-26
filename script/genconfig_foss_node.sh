@@ -20,6 +20,7 @@ CONFIG_PACKAGE_luci=y
 
 #Custom Packages for Node Router 
 echo "
+CONFIG_PACKAGE_mqttled=n
 CONFIG_PACKAGE_block-mount=y
 CONFIG_PACKAGE_kmod-usb-storage-uas=y
 CONFIG_PACKAGE_luci-app-samba4=y
