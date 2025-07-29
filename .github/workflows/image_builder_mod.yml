@@ -79,7 +79,7 @@ jobs:
 
       - name: Retry build
         if: failure()  && steps.buildfirmware.outcome == 'failure'
-        run:  make clean && sleep 10m && make -j$(($(nproc)+1)) world
+        run:  make distclean && sleep 10m && make -j$(($(nproc)+1)) world
       
       - name: Get build version
         run:  |
