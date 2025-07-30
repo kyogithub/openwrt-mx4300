@@ -43,9 +43,10 @@ jobs:
                 g++-multilib \
                 gettext \
                 git \
-                libncurses5-dev \
+                libncurses-dev \
                 libssl-dev \
                 python3-setuptools \
+                python3-dev \
                 rsync \
                 swig \
                 unzip \
