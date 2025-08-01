@@ -46,7 +46,6 @@ jobs:
                 libncurses-dev \
                 libssl-dev \
                 python3-setuptools \
-                python3-dev \
                 rsync \
                 swig \
                 unzip \
@@ -81,7 +80,7 @@ jobs:
 
       - name: Retry build
         if: failure()  && steps.buildfirmware.outcome == 'failure'
-        run:  make distclean && sleep 10m && make -j$(($(nproc)+1)) world
+        run:  make clean && sleep 10m && make -j$(($(nproc)+1)) world
       
       - name: Get build version
         run:  |
