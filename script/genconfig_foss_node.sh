@@ -35,6 +35,8 @@ CONFIG_PACKAGE_netdata=y
 CONFIG_PACKAGE_arp-scan=y
 CONFIG_PACKAGE_luci-compat=y
 CONFIG_PACKAGE_luci-app-hd-idle=y
+CONFIG_PACKAGE_collectd=y
+CONFIG_PACKAGE_collectd-mod-ping=y
 " >> .config
 
 make defconfig
