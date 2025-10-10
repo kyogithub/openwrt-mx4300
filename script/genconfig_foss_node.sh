@@ -31,13 +31,13 @@ CONFIG_PACKAGE_fping=y
 CONFIG_PACKAGE_coreutils-timeout=y
 CONFIG_PACKAGE_curl=y
 CONFIG_PACKAGE_bash=y
-CONFIG_PACKAGE_netdata=y
 CONFIG_PACKAGE_arp-scan=y
 CONFIG_PACKAGE_luci-compat=y
 CONFIG_PACKAGE_luci-app-hd-idle=y
-CONFIG_PACKAGE_collectd=y
+CONFIG_PACKAGE_luci-app-statistics=y
 CONFIG_PACKAGE_collectd-mod-ping=y
 " >> .config
+#CONFIG_PACKAGE_netdata=y replaced by collectd
 
 make defconfig
 
