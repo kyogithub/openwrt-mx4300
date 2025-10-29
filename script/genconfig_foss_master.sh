@@ -23,6 +23,7 @@ CONFIG_PACKAGE_kmod-openvswitch=n
 
 #Custom Packages for Master Router 
 echo "
+CONFIG_PACKAGE_wpad-basic-mbedtls=n
 CONFIG_PACKAGE_wpad-mbedtls=y
 CONFIG_PACKAGE_luci-proto-wireguard=y
 CONFIG_PACKAGE_dnsmasq-full=y
