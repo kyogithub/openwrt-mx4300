@@ -23,6 +23,7 @@ CONFIG_PACKAGE_kmod-openvswitch=n
 
 #Custom Packages for Node Router 
 echo "
+CONFIG_PACKAGE_wpad-basic-mbedtls=n
 CONFIG_PACKAGE_wpad-mbedtls=y
 CONFIG_PACKAGE_block-mount=y
 CONFIG_PACKAGE_kmod-usb-storage-uas=y
