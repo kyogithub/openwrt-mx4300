@@ -17,7 +17,7 @@ jobs:
         "BUILD_INIT": "init_build.sh",
         "BUILD_TYPE":  "nss",
         "BUILD_VER": "snapshot",
-        "BUILD_CUSTOM": "",
+        "BUILD_CUSTOM": "master",
         "BUILD_TAG": "",
         "BUILD_SYNC": "y",        
         "BUILD_KMOD": "y"}'
