@@ -39,11 +39,12 @@ sleep 1
 
 # now send the correct data
 write_log 7 "sending real IP to 'no-ip.com'"
-__URL=$(echo $__UPDURL | sed -e "s#\[USERNAME\]#$URL_USER#g" -e "s#\[PASSWORD\]#$URL_PASS#g" \
+___URL=$(echo $__UPDURL | sed -e "s#\[USERNAME\]#$URL_USER#g" -e "s#\[PASSWORD\]#$URL_PASS#g" \
 			       -e "s#\[DOMAIN\]#$domain#g" -e "s#\[IP\]#$__IP#g")
-[ $use_https -ne 0 ] && __URL=$(echo $__URL | sed -e 's#^http:#https:#')
+[ $use_https -ne 0 ] && ___URL=$(echo $___URL | sed -e 's#^http:#https:#')
 
-do_transfer_mod "$__URL" || return 1
+write_log 7 "url: $___URL"
+do_transfer_mod "$___URL" || return 1
 
 write_log 7 "'no-ip.com' answered:${N}$(cat $DATFILE)"
 # analyse provider answers
@@ -58,7 +59,7 @@ do_transfer_mod() {
 	local __ERR=0
 	local __CNT=0	# error counter
 	local __PROG  __RUNPROG
-  local __AUTH=' -H "Authorization: Basic (BASE64 user:pass)" -A "MX4300/OpenWRT" '
+	local __AUTH=' -H "Authorization: Basic Y3ZkdDJ3ajo4Slo0SjNycUVvU3E=" -A "MX4300/OpenWRT" '
 
 	[ $# -ne 1 ] && write_log 12 "Error in 'do_transfer()' - wrong number of parameters"
 
