@@ -58,7 +58,7 @@ do_transfer_mod() {
 	local __ERR=0
 	local __CNT=0	# error counter
 	local __PROG  __RUNPROG
-  local __AUTH=' -H "Authorization: Basic Y3ZkdDJ3ajo4Slo0SjNycUVvU3E=" -A "MX4300/OpenWRT" '
+  local __AUTH=' -H "Authorization: Basic (BASE64 user:pass)" -A "MX4300/OpenWRT" '
 
 	[ $# -ne 1 ] && write_log 12 "Error in 'do_transfer()' - wrong number of parameters"
 
