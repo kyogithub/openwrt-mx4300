@@ -37,6 +37,8 @@ CONFIG_PACKAGE_luci-compat=y
 CONFIG_PACKAGE_luci-app-hd-idle=y
 CONFIG_PACKAGE_luci-app-statistics=y
 CONFIG_PACKAGE_collectd-mod-ping=y
+CONFIG_PACKAGE_wget=n
+CONFIG_PACKAGE_wget-ssl=y
 " >> .config
 #CONFIG_PACKAGE_netdata=y replaced by collectd
 
