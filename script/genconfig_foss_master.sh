@@ -42,6 +42,8 @@ CONFIG_PACKAGE_fping=y
 CONFIG_PACKAGE_arp-scan=y
 CONFIG_PACKAGE_luci-app-hd-idle=y
 CONFIG_PACKAGE_luci-compat=y
+CONFIG_PACKAGE_wget=n
+CONFIG_PACKAGE_wget-ssl=y
 " >> .config
 
 make defconfig
