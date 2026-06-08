@@ -33,26 +33,16 @@ jobs:
         run: |
           sudo apt-get update && \
           sudo apt-get install -y \
-                build-essential \
-                clang \
-                flex \
-                bison \
                 g++ \
+                gcc \
+                glibc-source \
                 gawk \
-                gcc-multilib \
-                g++-multilib \
-                gettext \
                 git \
                 libncurses-dev \
                 libssl-dev \
-                python3-setuptools \
                 rsync \
-                swig \
-                unzip \
-                zlib1g-dev \
-                file \
-                curl \
-                jq \
+                make \
+                bzip2 \
                 wget && \
           sudo apt-get clean
 
