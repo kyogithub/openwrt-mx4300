@@ -61,7 +61,7 @@ jobs:
       - name: Update feeds
         run:  | 
           ls -l .
-          sed -i 's/^src-git telephony/# src-git telephony/' feeds.conf.default .
+          sed -i 's/^src-git telephony/# src-git telephony/' feeds.conf.default
           scripts/feeds update -a && scripts/feeds install -a
       
       - name: Generate config
