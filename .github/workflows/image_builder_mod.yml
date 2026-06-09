@@ -59,7 +59,10 @@ jobs:
           sh $BUILD_INIT $BUILD_TYPE $BUILD_VER $BUILD_SYNC $BUILD_TAG
 
       - name: Update feeds
-        run:  scripts/feeds update -a && scripts/feeds install -a
+        run:  | 
+          ls -l .
+          sed -i 's/^src-git telephony/# src-git telephony/' feeds.conf.default .
+          scripts/feeds update -a && scripts/feeds install -a
       
       - name: Generate config
         run:  sh genconfig_${BUILD_TYPE}_${BUILD_CUSTOM}.sh ${BUILD_VER} ${BUILD_KMOD}
