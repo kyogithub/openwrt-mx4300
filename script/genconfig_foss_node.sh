@@ -39,6 +39,19 @@ CONFIG_PACKAGE_luci-app-statistics=y
 CONFIG_PACKAGE_collectd-mod-ping=y
 CONFIG_PACKAGE_wget-nossl=n
 CONFIG_PACKAGE_wget-ssl=y
+
+# Deshabilitar sonido y multimedia explícitamente (Ahorro de espacio)
+CONFIG_PACKAGE_kmod-sound-core=n
+CONFIG_PACKAGE_SOUND_SUPPORT=n
+CONFIG_AUDIO_SUPPORT=n
+
+# Eliminar soporte de video/cámaras que viene por defecto en algunos núcleos
+CONFIG_PACKAGE_kmod-video-core=n
+
+# Deshabilitar telemetría y depuración del Kernel (Recomendado para ahorrar espacio)
+CONFIG_KERNEL_DEBUG_INFO=n
+CONFIG_KERNEL_DEBUG_KERNEL=n
+
 " >> .config
 #CONFIG_PACKAGE_netdata=y replaced by collectd
 
