@@ -1,4 +1,4 @@
-name: internal OpenWrt image builder
+name: internal OpenWrt image builder V1
 on: 
   workflow_call:
     inputs:
