@@ -54,9 +54,6 @@ CONFIG_AUDIO_SUPPORT=n
 # Eliminar soporte de video/cámaras que viene por defecto en algunos núcleos
 CONFIG_PACKAGE_kmod-video-core=n
 
-# Deshabilitar telemetría y depuración del Kernel (Recomendado para ahorrar espacio)
-CONFIG_KERNEL_DEBUG_INFO=n
-CONFIG_KERNEL_DEBUG_KERNEL=n
 " >> .config
 
 make defconfig
